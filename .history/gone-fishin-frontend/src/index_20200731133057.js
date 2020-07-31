@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
+import { createStore, applyMiddleware, compose, combinedReducers } from 'redux'
 import thunk from 'redux-thunk'
-import destinationsReducer from './reducers/destinations'
 
 
-const reducer = combineReducers({
-  dest: destinationsReducer
+const dest = () => []
+const reducer = combinedReducers({
+  dest
 })
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
