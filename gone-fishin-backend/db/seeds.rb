@@ -9,3 +9,5 @@
 Destination.create(name: "Island Fishing Lakes", city: "Hamilton", state: "ohio", description: "A small lake located in a mobile home park", feature_id: "bait shop")
 bait = Feature.create(name: "bait shop")
 featuretwo = Feature.create(name: "playground")
+comment1 = comment.create(comment: "This place is great")
+1strip = Trip.create(date: Date.new(07/31/2020))
