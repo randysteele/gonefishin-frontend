@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Destination.create(name: "Island Fishing Lakes", city: "Hamilton", state: "ohio", description: "A small lake located in a mobile home park", feature_id: "bait shop")
-Feature.create(name: "bait shop")
+bait = Feature.create(name: "bait shop")
 featuretwo = Feature.create(name: "playground")
