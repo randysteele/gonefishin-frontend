@@ -8,15 +8,14 @@ import { thunk } from 'redux-thunk'
 import { Provider } from 'react-redux'
 
 const dest = () => []
-const reducer = combinedReducers({
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+'Provider' is not defined 'Provider' is not defined const reducer = combineReducers({
   dest
 })
-const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
 
 const store = createStore(reducer, composeEnhancer(applyMiddleware(thunk)))
 
-ReactDOM.render(<Provider store={ store }><App /></Provider>, 
+ReactDOM.render(<Provider store={ store }><App/></Provider>, 
   document.getElementById('root')
 );
 
