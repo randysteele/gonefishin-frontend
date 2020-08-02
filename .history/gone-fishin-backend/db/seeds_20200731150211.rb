@@ -7,5 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 bait = Feature.create(name: "bait shop")
 comment1 = Comment.create(content: "This place is great")
-dest1 = Destination.create(name: "Island Fishing Lakes", city: "Hamilton", state: "ohio", description: "A small lake located in a mobile home park", feature_id: bait.id, comment_id: comment1.id)
+Destination.create(name: "Island Fishing Lakes", city: "Hamilton", state: "ohio", description: "A small lake located in a mobile home park", feature_id: bait, comment_id: comment1)
 featuretwo = Feature.create(name: "playground")
+#1strip = Trip.create(date: Date.new(2020, 07, 30))

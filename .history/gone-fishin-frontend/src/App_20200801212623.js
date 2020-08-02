@@ -9,15 +9,15 @@ class App extends React.Component {
 
   componentDidMount() {
   fetch("http://localhost:3000/api/v1/destinations/")
-  .then(response => response.json())
-  .then(data => console.log(data))
+  .then(response => response.json)
+  .then()
   }
 
   render(){
     return(
       <div className="App">
 
-        
+        <MainContainer />
       </div>
     )
   }

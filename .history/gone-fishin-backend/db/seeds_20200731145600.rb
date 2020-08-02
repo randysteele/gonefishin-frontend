@@ -5,7 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Destination.create(name: "Island Fishing Lakes", city: "Hamilton", state: "ohio", description: "A small lake located in a mobile home park", feature_id: bait.id, comment_id: comment1.id)
 bait = Feature.create(name: "bait shop")
-comment1 = Comment.create(content: "This place is great")
-dest1 = Destination.create(name: "Island Fishing Lakes", city: "Hamilton", state: "ohio", description: "A small lake located in a mobile home park", feature_id: bait.id, comment_id: comment1.id)
 featuretwo = Feature.create(name: "playground")
+comment1 = comment.create(comment: "This place is great")
+1strip = Trip.create(date: Date.new(2020, 07, 30))
