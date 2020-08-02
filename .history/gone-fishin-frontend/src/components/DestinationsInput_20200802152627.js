@@ -11,7 +11,3 @@ class DestinationsInput extends React.Component {
         )
     }
 }
-
-
-
-export default DestinationsInput
