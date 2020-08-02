@@ -7,6 +7,6 @@
 
 
 export default function destinationReducer(state = {destination: []}, action) {
-    return action
+    return action.payload
 }
 

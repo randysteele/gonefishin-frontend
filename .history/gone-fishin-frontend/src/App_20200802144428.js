@@ -3,21 +3,21 @@ import logo from './logo.svg';
 import './App.css';
 import {connect} from 'react-redux'
 import {fetchDestinations} from './actions/fetchDestinations'
-import DestinationsContainer from './containers/DestinationsContainer'
+
   
 
 
 class App extends React.Component {
 
-componentDidMount() {
+  componentDidMount() {
+this.props.fetchDestinations
 
   }
 
   render(){
     return(
-      <div className="App" >
-        <h1>Gone Fishin'</h1>
-      <DestinationsContainer />
+      <div className="App">
+
         
       </div>
     )
@@ -35,6 +35,6 @@ componentDidMount() {
   // }
 
 
-    export default connect()(App)
+    export default connect(null, {fetchDestinations}) (App)
 
 

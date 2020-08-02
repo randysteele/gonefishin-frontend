@@ -2,22 +2,22 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {connect} from 'react-redux'
-import {fetchDestinations} from './actions/fetchDestinations'
-import DestinationsContainer from './containers/DestinationsContainer'
+
   
 
 
 class App extends React.Component {
 
-componentDidMount() {
-
+  componentDidMount() {
+  fetch("http://localhost:3000/api/v1/destinations/")
+  .then(response => response.json())
+  .then(data => console.log(data))
   }
 
   render(){
     return(
-      <div className="App" >
-        <h1>Gone Fishin'</h1>
-      <DestinationsContainer />
+      <div className="App">
+
         
       </div>
     )
@@ -35,6 +35,6 @@ componentDidMount() {
   // }
 
 
-    export default connect()(App)
+    export default connect(null, {fetchDestinations}) (App)
 
 
