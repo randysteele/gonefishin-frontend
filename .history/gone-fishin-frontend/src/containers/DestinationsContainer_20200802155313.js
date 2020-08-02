@@ -10,16 +10,12 @@ import {fetchDestinations} from '../actions/fetchDestinations'
 
 class DestinationsContainer extends React.Component {
 
-    componentDidMount(){
-        this.props.fetchDestinations()
-    }
-
     render(){
     return (
         <div>
             
             <DestinationsInput />
-            <DestinationsList destination={this.props}/>
+            <DestinationsList />
 
         </div>
 
@@ -30,7 +26,7 @@ class DestinationsContainer extends React.Component {
 
 const mapStateToProps= state => {
     return {
-        destination: state.destinations
+       // destinations: state.destinations
     } 
 }
 

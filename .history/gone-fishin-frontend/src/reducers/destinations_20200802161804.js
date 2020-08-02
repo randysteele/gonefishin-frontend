@@ -6,13 +6,13 @@
 // }
 
 
-export default function destinationReducer(state = {destination: []}, action) {
+export default function destinationReducer(state = {destinations: []}, action) {
     
     switch(action.type){
     case 'FETCH_DESTINATIONS':
-    return {destination: action.payload}
+    return {destinations}
     
-    default:
+    
     return state
     }
 }

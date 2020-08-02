@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {connect} from 'react-redux'
-import {fetchDestinations} from './actions/fetchDestinations'
+import {fetchDestinations} from '../actions/fetchDestinations.js'
 import DestinationsContainer from './containers/DestinationsContainer'
   
 
@@ -10,7 +10,7 @@ import DestinationsContainer from './containers/DestinationsContainer'
 class App extends React.Component {
 
 componentDidMount() {
- // this.props.fetchDestinations()
+  this.props.fetchDestinations()
   }
 
   render(){

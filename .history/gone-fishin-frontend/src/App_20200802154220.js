@@ -10,7 +10,7 @@ import DestinationsContainer from './containers/DestinationsContainer'
 class App extends React.Component {
 
 componentDidMount() {
- // this.props.fetchDestinations()
+  this.props.fetchDestinations()
   }
 
   render(){
@@ -22,6 +22,8 @@ componentDidMount() {
       </div>
     )
   }
+
+
 
 
   }

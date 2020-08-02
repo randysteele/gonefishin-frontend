@@ -19,7 +19,7 @@ class DestinationsContainer extends React.Component {
         <div>
             
             <DestinationsInput />
-            <DestinationsList destination={this.props}/>
+            <DestinationsList destination={this.props.destination}/>
 
         </div>
 

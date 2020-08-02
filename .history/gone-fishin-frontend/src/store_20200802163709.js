@@ -2,10 +2,9 @@ import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
 import destinationsReducer from './reducers/destinations'
 import thunk from 'redux-thunk'
 
-const reducer = combineReducers({ 
-  dest: destinationsReducer
-   
-  })
+// const reducer = combineReducers({
+//     dest: destinationsReducer
+//   })
   
 
 

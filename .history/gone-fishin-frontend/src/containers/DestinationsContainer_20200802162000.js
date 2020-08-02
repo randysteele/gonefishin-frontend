@@ -19,7 +19,7 @@ class DestinationsContainer extends React.Component {
         <div>
             
             <DestinationsInput />
-            <DestinationsList destination={this.props}/>
+            <DestinationsList />
 
         </div>
 
@@ -30,7 +30,7 @@ class DestinationsContainer extends React.Component {
 
 const mapStateToProps= state => {
     return {
-        destination: state.destinations
+        destinations: state.destinations
     } 
 }
 
