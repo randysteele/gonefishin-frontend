@@ -18,8 +18,8 @@ class DestinationsInput extends React.Component {
     }
 
 
-    handleSubmit = () => {
-        debugger;        
+    handleSubmit = (event) => {
+        debugger        
     }
 
 
@@ -27,7 +27,7 @@ class DestinationsInput extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}> 
+                <form handleSubmit={this.handleSubmit}> 
                 <label>Lake Name: </label>
                 <input type="text" placeholder="Lake Name" value={this.state.name} name="name" onChange={this.handleChange}></input>
                 <label>City: </label>   
@@ -37,7 +37,7 @@ class DestinationsInput extends React.Component {
                 <label>Description: </label>   
                 <input type="text" placeholder="Description: "value={this.state.description} name="description" onChange={this.handleChange}>
                 </input>
-                <input type="submit"/>
+                <input type="submit"></input>
                 </form>
             </div>
 
