@@ -5,7 +5,8 @@ export default function destinations(state = {destinations: []}, action) {
     case 'FETCH_DESTINATIONS':
     return {destinations: action.payload}
     case 'ADD_ACCOUNT':
-        return {...state, destinations: [...state.destinations, action.payload]}    
+        return {...state, destinations: [...state.destinations, actions.payload] }
+    
     default:
     return state
     }

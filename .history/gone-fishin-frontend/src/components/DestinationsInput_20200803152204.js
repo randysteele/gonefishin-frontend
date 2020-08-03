@@ -19,9 +19,8 @@ class DestinationsInput extends React.Component {
     }
 
 
-    handleSubmit = (event) => {
-        event.preventDefault()
-       this.props.addDestination(this.state)        
+    handleSubmit = () => {
+        debugger;        
     }
 
 

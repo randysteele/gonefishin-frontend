@@ -1,6 +1,5 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {addDestination} from '../actions/addDestination'
 
 
 class DestinationsInput extends React.Component {
@@ -19,9 +18,8 @@ class DestinationsInput extends React.Component {
     }
 
 
-    handleSubmit = (event) => {
-        event.preventDefault()
-       this.props.addDestination(this.state)        
+    handleSubmit = () => {
+        debugger;        
     }
 
 
@@ -42,8 +40,11 @@ class DestinationsInput extends React.Component {
                 <input type="submit"/>
                 </form>
             </div>
+
+
+
         )
     }
 }
 
-export default connect(null, {addDestination})(DestinationsInput)
+export default connect(null, {addAccount})(DestinationsInput)

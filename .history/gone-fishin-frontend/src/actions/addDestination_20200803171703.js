@@ -9,8 +9,12 @@ export const addDestination = (data) => {
                 method: 'POST',
                 body: JSON.stringify(data)
             })
-            .then(response => response.json())
+            .then(response => response.json(data))
             .then(destinations => dispatch({type: 'ADD_DESTINATIONS', payload: destinations}))
+     
+
+
+
 
         }
     }
