@@ -31,11 +31,14 @@ class DestinationsInput extends React.Component {
                 <label>Description: </label>   
                 <input type="text" placeholder="Description: "value={this.state.description} name="description" onChange={this.handleChange}>
                 </input>
-                <input type="submit"></input>
                 </form>
             </div>
 
 
+// t.string "name"
+// t.string "city"
+// t.string "state"
+// t.string "description"
 
         )
     }
