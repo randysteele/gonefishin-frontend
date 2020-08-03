@@ -7,7 +7,7 @@ const DestinationsList = (props) => {
     
     return (
         <div>
-            {props.destinations.map(dest => <h5><li  key={dest.id}> Lake Name:{dest.name} <br></br> City: {dest.city} <br></br> State: {dest.state} <br></br> Description: {dest.description}</li></h5>)}
+            {props.destinations.map(dest => <li key={dest.id}> <h5>Lake Name: </h5>{dest.name} <br></br> City: {dest.city} <br></br> State: {dest.state} <br></br> Description: {dest.description}</li>)}
         </div>
     )
 }
