@@ -2,12 +2,15 @@ import React from 'react';
 import './App.css';
 import {connect} from 'react-redux'
 import DestinationsContainer from './containers/DestinationsContainer'
-//import {fetchDestinations} from './actions/fetchDestinations'
+import {fetchDestinations} from './actions/fetchDestinations'
   
 
 
 class App extends React.Component {
 
+componentDidMount() {
+
+}
 
   render(){
     return(
@@ -20,6 +23,6 @@ class App extends React.Component {
   }
 }
 
-export default connect()(App)
+export default connect(null, {fetchDestinations})(App)
 
 

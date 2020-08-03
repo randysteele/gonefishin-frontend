@@ -13,4 +13,4 @@ class DestinationsInput extends React.Component {
     }
 }
 
-export default connect()(DestinationsInput)
+export default connect() (DestinationsInput)

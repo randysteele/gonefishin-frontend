@@ -6,7 +6,7 @@ export function fetchDestinations() {
     .then(response => response.json())
     .then(destination => dispatch({
       type: 'FETCH_DESTINATIONS',
-       payload: destination
+       payload: destinations
     }))
   }
 }

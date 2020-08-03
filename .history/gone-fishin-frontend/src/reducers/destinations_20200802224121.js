@@ -1,5 +1,5 @@
 
-export default function destination(state = {destinations: []}, action) {
+export default function destinationReducer(state = {destinations: []}, action) {
     
     switch(action.type){
     case 'FETCH_DESTINATIONS':

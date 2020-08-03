@@ -1,9 +1,9 @@
 // a container should render other components and pass them data if needed 
 // they are typically class components 
 import React from 'react'
-import {connect} from 'react-redux'
 import DestinationsInput from '../components/DestinationsInput'
 import DestinationsList from  '../components/DestinationsList'
+import {connect} from 'react-redux'
 import {fetchDestinations} from '../actions/fetchDestinations'
 
 
@@ -23,9 +23,11 @@ class DestinationsContainer extends React.Component {
     )
     }
 }
+
 const mapStateToProps = state => {
     return {
         destinations: state.destinations
     } 
 }
+
 export default connect(mapStateToProps, {fetchDestinations})(DestinationsContainer);

@@ -2,12 +2,15 @@ import React from 'react';
 import './App.css';
 import {connect} from 'react-redux'
 import DestinationsContainer from './containers/DestinationsContainer'
-//import {fetchDestinations} from './actions/fetchDestinations'
+import {fetchDestinations} from './actions/fetchDestinations'
   
 
 
 class App extends React.Component {
 
+componentDidMount() {
+  this.props.fetchDestinations()
+  }
 
   render(){
     return(
@@ -18,8 +21,17 @@ class App extends React.Component {
       </div>
     )
   }
-}
 
-export default connect()(App)
+
+  }
+
+  // mapStateToProps = (state) => {
+  //   return {
+  //     destinations: state.destinations
+  //   }
+  // }
+
+
+    export default connect()(App)
 
 

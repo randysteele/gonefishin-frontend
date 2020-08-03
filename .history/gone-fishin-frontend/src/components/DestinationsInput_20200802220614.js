@@ -1,5 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {store} from './store'
 
 
 class DestinationsInput extends React.Component {
@@ -13,4 +14,6 @@ class DestinationsInput extends React.Component {
     }
 }
 
-export default connect()(DestinationsInput)
+
+
+export default connect() (DestinationsInput)

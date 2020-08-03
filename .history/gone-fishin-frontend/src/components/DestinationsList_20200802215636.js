@@ -4,8 +4,10 @@ const DestinationsList = (props) => {
     return (
         <div>
             DestinationsList
+
         </div>
     )
+
 }
 
 
