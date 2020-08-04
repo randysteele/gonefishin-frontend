@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_31_185102) do
+ActiveRecord::Schema.define(version: 2020_08_04_154224) do
 
   create_table "comments", force: :cascade do |t|
     t.string "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "destination_id"
   end
 
   create_table "destinations", force: :cascade do |t|
@@ -25,14 +26,13 @@ ActiveRecord::Schema.define(version: 2020_07_31_185102) do
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "feature_id"
-    t.integer "comment_id"
   end
 
   create_table "features", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "destination_id"
   end
 
   create_table "trips", force: :cascade do |t|
