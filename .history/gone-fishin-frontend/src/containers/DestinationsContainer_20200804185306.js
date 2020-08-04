@@ -20,12 +20,12 @@ class DestinationsContainer extends React.Component {
       return (
         <div>     
          <Route path='/destinations/new' component={DestinationsInput}/>     
-         <Route exact path='/destinations' render={() => <DestinationsList destinations={this.props.destinations}/>}/>
+         <Route path='/destinations' render={() => <DestinationsList destinations={this.props.accounts}/>}/>
             
         </div>
-      )
+          )
           
-       }
+    }
     }
 const mapStateToProps = state => {
     return {
