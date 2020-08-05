@@ -22,7 +22,7 @@ class DestinationsContainer extends React.Component {
       return (
         <div>     
          <Route path='/destinations/new' component={DestinationsInput}/>     
-         <Route path='/destinations/:id'  render={(routerProps) => <DestinationShow {...routerProps} destinations={this.props.destinations}/>}/>   
+         <Route path='/destinations/:id'  render={(routerProps) => <DestinationsList {...routerProps} destinations={this.props.destinations}/>}/>   
          <Route exact path='/destinations' render={(routerProps) => <DestinationsList {...routerProps} destinations={this.props.destinations}/>}/>
         </div>
       )

@@ -5,7 +5,7 @@ const DestinationShow = (props) => {
 
     let destination = props.destinations[props.match.params.id - 1]
   
-    
+    debugger
 
         return (
             <li>

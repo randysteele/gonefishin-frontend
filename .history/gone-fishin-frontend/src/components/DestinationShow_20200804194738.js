@@ -5,13 +5,14 @@ const DestinationShow = (props) => {
 
     let destination = props.destinations[props.match.params.id - 1]
   
-    
+    console.log(destination)
 
         return (
             <li>
                 {destination ? destination.name : null}  - {destination ? destination.city : null} - {destination ? destination.state : null} - {destination ? destination.description : null}
             </li>
         )
+
 }
 
 
