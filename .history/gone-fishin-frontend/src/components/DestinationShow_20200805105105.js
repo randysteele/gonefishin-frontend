@@ -9,7 +9,7 @@ const DestinationShow = (props) => {
 
         return (
             <li>
-                Lake Name: {destination ? destination.name : null} <br></br><br></br>  City: {destination ? destination.city : null} <br></br><br></br> State: {destination ? destination.state : null} <br></br><br></br> Description: {destination ? destination.description : null} <br></br>
+                Lake Name: {destination ? destination.name : null} <br></br> - City: {destination ? destination.city : null} - State: {destination ? destination.state : null} - Description: {destination ? destination.description : null}
             </li>
         )
 }
