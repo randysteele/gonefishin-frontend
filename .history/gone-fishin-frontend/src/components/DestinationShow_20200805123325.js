@@ -10,7 +10,6 @@ const DestinationShow = (props) => {
 
         return (
             <li>
-                {/* {destination ? null : <Redirect to='/destinations'/>} */}
                 Lake Name: {destination ? destination.name : null} <br></br><br></br>  City: {destination ? destination.city : null} <br></br><br></br> State: {destination ? destination.state : null} <br></br><br></br> Description: {destination ? destination.description : null} <br></br>
             </li>
         )
@@ -18,3 +17,5 @@ const DestinationShow = (props) => {
 
 
 export default DestinationShow
+
+//            Lake Name: {destination.name} City: {destination.city} State: {destination.state} Description: {destination.description}

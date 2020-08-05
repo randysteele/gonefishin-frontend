@@ -18,3 +18,5 @@ const DestinationShow = (props) => {
 
 
 export default DestinationShow
+
+//            Lake Name: {destination.name} City: {destination.city} State: {destination.state} Description: {destination.description}

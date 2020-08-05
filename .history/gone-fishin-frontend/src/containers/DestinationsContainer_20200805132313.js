@@ -7,7 +7,7 @@ import DestinationsList from  '../components/DestinationsList'
 import DestinationsInput from '../components/DestinationsInput'
 import DestinationShow from  '../components/DestinationShow'
 
-import {Route, Switch} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 
 
 

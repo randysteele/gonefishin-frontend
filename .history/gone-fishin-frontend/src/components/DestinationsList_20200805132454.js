@@ -1,7 +1,7 @@
 import React from 'react'
 // import DestinationsContainer from '../containers/DestinationsList'
 //import DestinationShow from './DestinationShow'
-import {Route, Link} from 'react-router-dom'
+import {Route, Link, Switch} from 'react-router-dom'
 
 
 
