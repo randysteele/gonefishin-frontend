@@ -1,7 +1,5 @@
 class Api::V1::FeaturesController < ApplicationController
 
-    before_action :set_destination
-
     def index
         features = Feature.all
         render json: FeatureSerializer.new(features) 
