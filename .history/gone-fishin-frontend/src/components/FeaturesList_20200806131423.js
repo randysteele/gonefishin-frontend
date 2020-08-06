@@ -3,7 +3,6 @@ import React from 'react'
 
 const FeaturesList = (props) => {
     console.log(props)
-    //debugger
 
     return (
         <div>

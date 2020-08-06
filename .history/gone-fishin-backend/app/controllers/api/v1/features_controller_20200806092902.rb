@@ -3,18 +3,18 @@ class Api::V1::FeaturesController < ApplicationController
     before_action :set_destination
 
     def index
-        features = Feature.all
-        render json: features
+        @features = Feature.all
+        render json: @features
     end
 
     def show 
-        feature = Feature.find(params[:id])
-        render json: feature
+        @feature = Feature.find(params[:id])
+        render json: @feature
     end
 
     def create 
         @feature = @destination.features.new(feature_params)
-      if @feature.save
+      if @destination.save
         render json: @destination
     else
         render json: {Error: "NOT FOUND"}
@@ -31,7 +31,7 @@ end
 private 
 
     def set_destination
-        destination = Destination.find(params[:destination_id])
+        @destination = Destination.find(params[:destination_id])
     end
 
     def feature_params

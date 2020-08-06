@@ -8,10 +8,7 @@ class FeaturesInput extends React.Component {
         name: ""
     }
 
-    handleChange = (event) => {
-        this.setState({
-            [event.target.name]: event.target.value
-        })
+    handleChange = () => {
 
     }
 
@@ -20,7 +17,7 @@ class FeaturesInput extends React.Component {
             <div>
                 <form>
                     <label>Feature Name:</label>
-                    <input type="text" name="name" value ={this.state.name} onChange={this.handleChange}/>
+                    <input type="text" name="name" value ={this.state.name}/>
                     <input type="submit"/>
 
                 </form>

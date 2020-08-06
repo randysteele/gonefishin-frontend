@@ -11,7 +11,7 @@ class FeaturesContainer extends React.Component {
         return (
             <div>
                 <FeaturesInput/>
-                 <FeaturesList features={this.props.destination && this.props.destination.features}/>
+                 <FeaturesList features={props.destinations && this.props.destinations.features}/>
             </div>
         )
     }

@@ -2,8 +2,9 @@ import React from 'react'
 
 
 const FeaturesList = (props) => {
-    console.log(props)
-    //debugger
+   // debugger
+    console.log(props.destination.features)
+
 
     return (
         <div>

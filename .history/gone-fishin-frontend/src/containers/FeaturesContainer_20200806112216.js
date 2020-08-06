@@ -6,14 +6,14 @@ import FeaturesList from '../components/FeaturesList'
 class FeaturesContainer extends React.Component {
     
 
-
     render(){
         return (
             <div>
                 <FeaturesInput/>
-                 <FeaturesList features={this.props.destination && this.props.destination.features}/>
+                 <FeaturesList features={this.props.destinations && this.props.destination.features}/>
             </div>
         )
     }
 }
+
 export default FeaturesContainer

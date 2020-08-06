@@ -2,7 +2,11 @@ class Api::V1::DestinationsController < ApplicationController
 
     def index
         destinations = Destination.all
-        render json: destinations        
+        options = {
+            include: [:features]
+        }
+        render json: DestinationSerializer.new(destinations, options) 
+        
     end
 
     def create 
@@ -16,6 +20,9 @@ class Api::V1::DestinationsController < ApplicationController
 
     def show 
         @destination = Destination.find_by(params[:id])
+        options = {
+            include: [:features]
+        }
 
         render json: @destination
     end

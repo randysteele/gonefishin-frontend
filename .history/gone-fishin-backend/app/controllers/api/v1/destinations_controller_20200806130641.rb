@@ -2,7 +2,13 @@ class Api::V1::DestinationsController < ApplicationController
 
     def index
         destinations = Destination.all
-        render json: destinations        
+        options = {
+            include: [:features]
+        }
+
+
+        render json: destinations, options
+        
     end
 
     def create 
