@@ -17,7 +17,7 @@ class FeaturesInput extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        this.props.addFeature(this.state, this.props.destinations.id)    
+        this.props.addFeature(this.state, this.props.destination.id)    
         this.setState({
          name: ''
         })

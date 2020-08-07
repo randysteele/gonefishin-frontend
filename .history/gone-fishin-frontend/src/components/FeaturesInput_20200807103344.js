@@ -17,7 +17,7 @@ class FeaturesInput extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        this.props.addFeature(this.state, this.props.destinations.id)    
+        this.props.addFeature(this.state, this.props.destination.id)    
         this.setState({
          name: ''
         })
@@ -27,10 +27,10 @@ class FeaturesInput extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
+                <form>
                     <label>Feature Name:</label>
                     <input type="text" name="name" value ={this.state.name} onChange={this.handleChange}/>
-                    <input type="submit" />
+                    <input type="submit" onSubmit={this.handleSubmit}/>
 
                 </form>
 
