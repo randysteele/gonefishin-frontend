@@ -1,21 +1,21 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {deleteFeature} from '../actions/deleteFeature'
+import {deleteFeature} from '../actions/addFeature'
 
 
 
 const FeaturesList = (props) => {
    // console.log(props.features)
 
-   const handleDelete = (feature) => {
-       props.deleteFeature(feature.id, feature.destination_id)
+   const handleDelete = (event) => {
+       props.deleteFeature(featureId, destinationId)
 
    }
 
     return (
         <div>
            {props.features && props.features.map(feature =>
-            <li key={feature.id}>{feature.name}<br></br><button onClick={() => handleDelete(feature)}>Delete</button>
+            <li key={feature.id}>{feature.name}<br></br><button onClick={handleDelete}>Delete</button>
             </li>
             )} 
         </div>

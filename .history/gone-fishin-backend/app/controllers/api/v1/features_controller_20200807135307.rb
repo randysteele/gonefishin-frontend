@@ -22,10 +22,10 @@ class Api::V1::FeaturesController < ApplicationController
 end
 
     def destroy 
-    #    byebug
-        @feature = Feature.find(params["id"])
-        @destination = Destination.find(@feature.destination_id)
-        @feature.destroy
+       byebug
+        @feature = Feature.find(params[:id])
+        @destination = Feature.find(@feature.destination_id)
+        @feature.destory
         render json: @destination
     end
 

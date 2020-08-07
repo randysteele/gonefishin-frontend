@@ -15,7 +15,7 @@ const FeaturesList = (props) => {
     return (
         <div>
            {props.features && props.features.map(feature =>
-            <li key={feature.id}>{feature.name}<br></br><button onClick={() => handleDelete(feature)}>Delete</button>
+            <li key={feature.id}>{feature.name}<br></br><button onClick={() => handleDelete(event, feature)}>Delete</button>
             </li>
             )} 
         </div>

@@ -24,8 +24,9 @@ end
     def destroy 
     #    byebug
         @feature = Feature.find(params["id"])
-        @destination = Destination.find(@feature.destination_id)
         @feature.destroy
+        # @destination = Feature.find(@feature.destination_id)
+       
         render json: @destination
     end
 
