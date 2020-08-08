@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {addComment} from '../actions/addComment'
+//import {deleteFeature} from '../actions/deleteFeature'
 
 
 
@@ -22,4 +22,4 @@ const CommentList = (props) => {
     )
 }
 
-export default connect(null, {addComment}) (CommentList)
+export default connect(null, {}) (CommentList)

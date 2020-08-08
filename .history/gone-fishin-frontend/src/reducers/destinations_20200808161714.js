@@ -34,14 +34,14 @@ export default function destinations(state = {destinations: []}, action) {
           return {...state, destinations: destinationsss}    
 
           case 'ADD_COMMENT':
-            let destinationForComments = state.destinations.map(destination => {
+            let destinations = state.destinations.map(destination => {
               if (destination.id === action.payload.id) {
                return action.payload
               } else {
                 return destination
               }
             }) 
-            return {...state, destinations: destinationForComments}
+            return {...state, destinations: destinations}
       
     default:
     return state
