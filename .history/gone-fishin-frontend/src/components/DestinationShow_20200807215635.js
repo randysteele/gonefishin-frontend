@@ -18,8 +18,10 @@ const DestinationShow = (props) => {
                  {destination ? destination.name : null} - {destination ? destination.city : null} -  {destination ? destination.state : null} -  {destination ? destination.description : null} 
 
             </h2>
-            <h2>Edit Destination!</h2><DestinationEdit  destination={destination}/>
-            <h4>Lake Features!</h4> <FeaturesContainer destination={destination}/>
+            Edit Destination!<DestinationEdit  destination={destination}/><br></br>
+
+
+           Lake Features <FeaturesContainer destination={destination}/>
             </div>
         )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 //import {Redirect} from 'react-router-dom'
 
 import FeaturesContainer from '../containers/FeaturesContainer'
-import  DestinationEdit from '../components/DestinationEdit'
+import destinationEdit, {DestinationEdit} from '../components/DestinationEdit'
 
 
 
@@ -18,8 +18,8 @@ const DestinationShow = (props) => {
                  {destination ? destination.name : null} - {destination ? destination.city : null} -  {destination ? destination.state : null} -  {destination ? destination.description : null} 
 
             </h2>
-            <h2>Edit Destination!</h2><DestinationEdit  destination={destination}/>
-            <h4>Lake Features!</h4> <FeaturesContainer destination={destination}/>
+            <FeaturesContainer destination={destination}/>
+            <destinationEdit destination={destination}/>
             </div>
         )
 }

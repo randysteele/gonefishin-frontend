@@ -31,7 +31,9 @@ export default function destinations(state = {destinations: []}, action) {
               return destination
             }
           }) 
-          return {...state, destinations: destinationsss}    
+          return {...state, destinations: destinationsss}
+     
+    
     default:
     return state
     }

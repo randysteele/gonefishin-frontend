@@ -30,7 +30,6 @@ class Api::V1::DestinationsController < ApplicationController
       #  byebug
         @destination = Destination.find(params[:id])
         @destination.update(state: params["destination"]["state"], name: params["destination"]["name"], city: params["destination"]["city"], description: params["destination"]["description"])
-        @destination.save
         render json: @destination
 
     end

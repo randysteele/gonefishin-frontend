@@ -23,15 +23,15 @@ export default function destinations(state = {destinations: []}, action) {
             }
           }) 
           return {...state, destinations: destinationss}
-      case 'EDIT_DESTINATION':
-        let destinationsss = state.destinations.map(destination => {
-            if (destination.id === action.payload.id) {
-             return action.payload
-            } else {
-              return destination
-            }
-          }) 
-          return {...state, destinations: destinationsss}    
+    //   case 'EDIT_DESTINATION':
+    //     let destinationsss = state.destinations.map(destination => {
+    //         if (destination.id === action.payload.id) {
+    //          return action.payload
+    //         } else {
+    //           return destination
+    //         }
+    //       }) 
+    //       return {...state, destinations: destinationsss}    
     default:
     return state
     }
