@@ -4,11 +4,7 @@ import {deleteFeature} from '../actions/deleteFeature'
 
 
 
-
 const FeaturesList = (props) => {
-
-    
-
 
    const handleDelete = (feature) => {
        props.deleteFeature(feature.id, feature.destination_id)
@@ -18,7 +14,7 @@ const FeaturesList = (props) => {
     return (
         <div>
            {props.features && props.features.map(feature =>
-            <li key={feature.id}>{feature.name}<br></br><button onClick={() => handleDelete(feature)}>Delete</button>
+            <li key={feature.id}>{feature.name}<br></br><Button onClick={() => handleDelete(feature)}>Delete</Button>
             </li>
             )} 
         </div>

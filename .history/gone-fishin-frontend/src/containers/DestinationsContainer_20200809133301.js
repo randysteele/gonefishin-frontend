@@ -22,7 +22,6 @@ class DestinationsContainer extends React.Component {
     render(){        
       return (
         <div>  
-          <Navbar/>
           <Switch>
          <Route  path='/destinations/new' component={DestinationsInput}/>     
          <Route  path='/destinations/:id'  render={(routerProps) => <DestinationShow {...routerProps} destinations={this.props.destinations}/>}/>   

@@ -27,7 +27,9 @@ class App extends React.Component {
   render(){
     return(
       <div className="App" >
-      <Title>Gone Fishin'</Title>
+        <Title>Gone Fishin'</Title>
+        <Button primary></Button>
+        <Button></Button>
       <DestinationsContainer />        
       </div>
     )

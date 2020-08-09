@@ -6,7 +6,7 @@ import styled from 'styled-components'
 // import DestinationsInput from './components/DestinationsInput';
 // import DestinationsList from './components/DestinationsList';
 //import {fetchDestinations} from './actions/fetchDestinations'
-import Button from './components/Button'
+import Button from '../components/Button.js'
 
 const Title = styled.h1`
 color: blue;
@@ -27,7 +27,9 @@ class App extends React.Component {
   render(){
     return(
       <div className="App" >
-      <Title>Gone Fishin'</Title>
+        <Title>Gone Fishin'</Title>
+        <Button primary>Primary</Button>
+        <Button>Regular</Button>
       <DestinationsContainer />        
       </div>
     )
