@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import DestinationsContainer from './containers/DestinationsContainer'
-import styled, {ThemeProvider} from 'styled-components'
+import styled from 'styled-components'
 //import Button from './components/Button'
 
 const Title = styled.h1`
@@ -28,12 +28,10 @@ class App extends React.Component {
 
   render(){
     return(
-      <ThemeProvider theme={theme}>
       <div className="App" >
       <Title>Gone Fishin'</Title>
       <DestinationsContainer />        
       </div>
-      </ThemeProvider>
     )
   }
 }

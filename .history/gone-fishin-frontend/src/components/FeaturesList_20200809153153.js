@@ -1,12 +1,26 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {deleteFeature} from '../actions/deleteFeature'
-import Button from '../components/Button'
+import styled from 'styled-components'
+import {Button} from './components/Button'
 
 
 
 
 const FeaturesList = (props) => {
+
+//  const Button = styled.button`
+//  font-family: sans:serif;
+//  font-size: 1.3rem;
+//  border: none;
+//  border-radius: 5px;
+//  padding: 7px 10px;
+//  background: red;
+//  color: '#fff';
+//  &:hover{
+//    background: blue;
+//  }
+// `
 
 
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {deleteFeature} from '../actions/deleteFeature'
+import styled from 'styled-components'
 import Button from '../components/Button'
 
 

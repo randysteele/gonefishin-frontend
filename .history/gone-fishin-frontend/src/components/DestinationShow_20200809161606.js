@@ -1,7 +1,8 @@
 import React from 'react'
 import FeaturesContainer from '../containers/FeaturesContainer'
-import DestinationEdit from '../components/DestinationEdit'
+import  DestinationEdit from '../components/DestinationEdit'
 import CommentsContainer from '../containers/CommentsContainer'
+import {Headers} from '../components/Headers'
 
 
 
@@ -18,7 +19,7 @@ const DestinationShow = (props) => {
                  {destination ? destination.name : null} - {destination ? destination.city : null} -  {destination ? destination.state : null} -  {destination ? destination.description : null} 
 
             </h2>
-            <h2>Edit Destination!</h2><DestinationEdit  destination={destination}/>
+            <Headers>Edit Destination!</Headers><DestinationEdit  destination={destination}/>
             <h4>Lake Features!</h4> <FeaturesContainer destination={destination}/>
             <h4>Comments:</h4> <CommentsContainer destination={destination} />
             </div>

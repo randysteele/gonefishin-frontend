@@ -1,7 +1,8 @@
 import React from 'react'
 import FeaturesContainer from '../containers/FeaturesContainer'
-import DestinationEdit from '../components/DestinationEdit'
+import  DestinationEdit from '../components/DestinationEdit'
 import CommentsContainer from '../containers/CommentsContainer'
+import {Headers} from '../components/Headers'
 
 
 

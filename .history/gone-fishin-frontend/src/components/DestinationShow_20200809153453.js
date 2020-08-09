@@ -1,8 +1,9 @@
 import React from 'react'
-import FeaturesContainer from '../containers/FeaturesContainer'
-import DestinationEdit from '../components/DestinationEdit'
-import CommentsContainer from '../containers/CommentsContainer'
+//import {Redirect} from 'react-router-dom'
 
+import FeaturesContainer from '../containers/FeaturesContainer'
+import  DestinationEdit from '../components/DestinationEdit'
+import CommentsContainer from '../containers/CommentsContainer'
 
 
 

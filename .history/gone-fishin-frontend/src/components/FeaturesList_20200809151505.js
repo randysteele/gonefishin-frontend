@@ -1,13 +1,14 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {deleteFeature} from '../actions/deleteFeature'
-import Button from '../components/Button'
+import {Button} from '../App'
 
 
 
 
 const FeaturesList = (props) => {
 
+    
 
 
    const handleDelete = (feature) => {

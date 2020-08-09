@@ -1,13 +1,14 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {deleteFeature} from '../actions/deleteFeature'
-import Button from '../components/Button'
+import App from '../App'
 
 
 
 
 const FeaturesList = (props) => {
 
+    
 
 
    const handleDelete = (feature) => {
@@ -18,7 +19,7 @@ const FeaturesList = (props) => {
     return (
         <div>
            {props.features && props.features.map(feature =>
-            <li key={feature.id}>{feature.name}<br></br><Button onClick={() => handleDelete(feature)}>Delete</Button>
+            <li key={feature.id}>{feature.name}<br></br><button onClick={() => handleDelete(feature)}>Delete</Button>
             </li>
             )} 
         </div>

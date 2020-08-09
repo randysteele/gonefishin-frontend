@@ -1,20 +1,25 @@
 import React from 'react';
 import './App.css';
 import DestinationsContainer from './containers/DestinationsContainer'
-import styled, {ThemeProvider} from 'styled-components'
+import styled from 'styled-components'
 //import Button from './components/Button'
 
 const Title = styled.h1`
 color: blue;
 font-size: 100px;
 `
-
-const theme =  {
-  primary:'teal',
-  secondary: 'green',
-  font: 'sans-serif',
-  background: 'blue'
-};
+let Button = styled.button`
+ font-family: sans:serif;
+ font-size: 1.3rem;
+ border: none;
+ border-radius: 5px;
+ padding: 7px 10px;
+ background: red;
+ color: '#fff';
+ &:hover{
+   background: blue;
+ }
+`
 
 
 class App extends React.Component {
@@ -28,12 +33,10 @@ class App extends React.Component {
 
   render(){
     return(
-      <ThemeProvider theme={theme}>
       <div className="App" >
       <Title>Gone Fishin'</Title>
       <DestinationsContainer />        
       </div>
-      </ThemeProvider>
     )
   }
 }

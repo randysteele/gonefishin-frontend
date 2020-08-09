@@ -1,8 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {editDestination} from '../actions/editDestination'
-import Button from '../components/Button'
-
 
 
 class DestinationEdit extends React.Component {
@@ -49,7 +47,7 @@ class DestinationEdit extends React.Component {
                 <label>Description: </label>   
                 <textarea type="text" placeholder="Description: "value={this.state.description} name="description" onChange={this.handleChange}>
                 </textarea>
-                <Button type="submit">Submit</Button>
+                <Button type="submit"/>
                 </form>
             </div>
         )

@@ -1,13 +1,12 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {addFeature} from '../actions/addFeature'
-import Button from '../components/Button'
+import {addComment} from '../actions/addComment'
 
 
-class FeaturesInput extends React.Component {
+class CommentInput extends React.Component {
 
     state = {
-        name: ""
+        content: ""
     }
 
     handleChange = (event) => {
@@ -18,9 +17,9 @@ class FeaturesInput extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        this.props.addFeature(this.state, this.props.destinations.id)    
+        this.props.addComment(this.state, this.props.destinations.id)    
         this.setState({
-         name: ''
+         content: ''
         })
     }
     
@@ -29,8 +28,8 @@ class FeaturesInput extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <label>Feature Name:</label>
-                    <input type="text" name="name" value ={this.state.name} onChange={this.handleChange}/>
+                    <label>Comment:</label>
+                    <input type="text" name="content" value ={this.state.content} onChange={this.handleChange}/>
                     <Button type="submit">Submit</Button>
 
                 </form>
@@ -41,4 +40,4 @@ class FeaturesInput extends React.Component {
     }
 }
 
-export default connect(null, {addFeature}) (FeaturesInput)
+export default connect(null, {addComment}) (CommentInput)
