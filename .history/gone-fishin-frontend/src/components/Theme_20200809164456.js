@@ -4,5 +4,5 @@ export default {
     primary:'teal',
     secondary: 'green',
     font: 'sans-serif',
-    
+    backgroundColor: 'blue'
 };

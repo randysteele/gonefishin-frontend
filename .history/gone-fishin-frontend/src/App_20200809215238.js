@@ -32,7 +32,7 @@ class App extends React.Component {
       <ThemeProvider theme={theme}>
       <div className="App"
         style={{
-          backgroundImage:`url("https://cdn0.wideopenspaces.com/wp-content/uploads/2015/01/beautiful-fishing.jpg")`,backgroundRepeat: "no-repeat", backgroundSize: 'cover'
+          backgroundImage:`url("https://cdn0.wideopenspaces.com/wp-content/uploads/2015/01/beautiful-fishing.jpg")`,backgroundRepeat: "no-repeat"
          }}>
       
       <Title>Gone Fishin'</Title>

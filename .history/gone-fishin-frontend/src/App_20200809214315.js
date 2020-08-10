@@ -30,11 +30,7 @@ class App extends React.Component {
   render(){
     return(
       <ThemeProvider theme={theme}>
-      <div className="App"
-        style={{
-          backgroundImage:`url("https://cdn0.wideopenspaces.com/wp-content/uploads/2015/01/beautiful-fishing.jpg")`,backgroundRepeat: "no-repeat", backgroundSize: 'cover'
-         }}>
-      
+      <div className="App">
       <Title>Gone Fishin'</Title>
       <DestinationsContainer />        
       </div>

@@ -16,10 +16,10 @@ const DestinationShow = (props) => {
         return (    
             <div>    
             <h2>                
-                 {destination ? destination.name : null} - {destination ? destination.city : null} -  {destination ? destination.state : null} <br></br><br></br>-  {destination ? destination.description : null} 
+                 {destination ? destination.name : null} - {destination ? destination.city : null} -  {destination ? destination.state : null} -  {destination ? destination.description : null} 
 
             </h2>
-            <H2>Edit Destination!</H2><DestinationEdit  destination={destination} />
+            <H2>Edit Destination!</H2><DestinationEdit  destination={destination}/><br></br>
             <h4>Lake Features!</h4> <FeaturesContainer destination={destination}/>
             <h4>Comments:</h4> <CommentsContainer destination={destination} />
             </div>
