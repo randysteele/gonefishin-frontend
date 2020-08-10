@@ -65,7 +65,7 @@ h4 {
 h5 {
   text-decoration-color: white;
 }
-.Navbar {
+.NavBar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
