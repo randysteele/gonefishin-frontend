@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {editDestination} from '../actions/editDestination'
-import Button from '../styledComponents.js/Button'
+import Button from '../components/Button'
 
 
 

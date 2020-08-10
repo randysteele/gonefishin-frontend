@@ -4,13 +4,13 @@ import {Link} from 'react-router-dom'
 const Navbar = (props) => {
 
     return (
-        <div>
-            
+        <nav>
+
             <Link to='/destinations' style={{paddingRight: '10px'}}>Destinations    </Link>
             <Link to='/destinations/new'>Add Destination    </Link>
 
             
-        </div>
+        </nav>
     )
 }
 export default Navbar

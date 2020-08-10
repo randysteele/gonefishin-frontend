@@ -19,10 +19,9 @@ class App extends React.Component {
       
       <div className="App">
         <Navbar />
-        <Title>Gone Fishin'</Title>
-
       <DestinationsContainer />  
 
+            <Title>Gone Fishin'</Title>
 
 
       </div>
