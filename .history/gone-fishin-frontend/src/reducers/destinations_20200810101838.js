@@ -19,7 +19,15 @@ export default function destinations(state = {destinations: []}, action) {
       case 'EDIT_DESTINATION':
           return {...state, destinations: destinations} 
           case 'ADD_COMMENT':
-            return {...state, destinations: destinations}      
+            let destinationForComments = state.destinations.map(destination => {
+              if (destination.id === action.payload.id) {
+               return action.payload
+              } else {
+                return destination
+              }
+            }) 
+            return {...state, destinations: destinationForComments}
+      
     default:
     return state
     }

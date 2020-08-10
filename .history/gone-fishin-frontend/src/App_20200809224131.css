@@ -41,23 +41,12 @@
   height: 100px;
 }
 body {
-  color: black;
-    text-decoration-color: white;  
-  }
+  color: orangered;
+  text-decoration-color: white;
+
+}
 
 a {
-  color: rgb(118, 255, 105);
-  text-decoration-color: white;
-}
-h2 {
-  text-decoration-color: white;
-}
-h3 {
-  text-decoration-color: white;
-}
-h4 {
-  text-decoration-color: white;
-}
-h5 {
+  color: rgb(123, 255, 105);
   text-decoration-color: white;
 }

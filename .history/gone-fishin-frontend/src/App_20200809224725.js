@@ -30,16 +30,19 @@ class App extends React.Component {
   render(){
     return(
       <ThemeProvider theme={theme}>
-        
+        <navbar>
       <div className="App"
+      
         style={{
-          backgroundImage:`url("https://images.unsplash.com/photo-1582657118090-af35eefc4e48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")`,backgroundRepeat: "no-repeat", backgroundSize: 'cover'
+          backgroundImage:`url("https://cdn0.wideopenspaces.com/wp-content/uploads/2015/01/beautiful-fishing.jpg")`,backgroundRepeat: "no-repeat", backgroundSize: 'cover'
          }}>
       
       <Title>Gone Fishin'</Title>
       <DestinationsContainer />        
       </div>
+      </navbar>
       </ThemeProvider>
+      
     )
   }
 }

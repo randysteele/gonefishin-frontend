@@ -19,7 +19,8 @@ export default function destinations(state = {destinations: []}, action) {
       case 'EDIT_DESTINATION':
           return {...state, destinations: destinations} 
           case 'ADD_COMMENT':
-            return {...state, destinations: destinations}      
+            return {...state, destinations: destinations}
+      
     default:
     return state
     }
