@@ -44,7 +44,7 @@ class DestinationsInput extends React.Component {
                 <label>State: </label>   
                 <input type="text" placeholder="State: " value={this.state.state} name="state" onChange={this.handleChange}></input>
                 <label>Description: </label>   
-                <textarea  type="text" placeholder="Description: " value={this.state.description} name="description"  onChange={this.handleChange}>
+                <textarea width="300px" type="text" placeholder="Description: " value={this.state.description} name="description"  onChange={this.handleChange}>
                 </textarea>
                 <input type="submit"/>
                 </form>

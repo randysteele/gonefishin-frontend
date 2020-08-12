@@ -4,6 +4,12 @@
 }
 
 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
 .App-header {
   background-color: #f4f4f4;
   min-height: 100vh;
@@ -31,7 +37,6 @@
   width: 100%;
   height: 100px;
 }
-
 body {
   color: black;
     text-decoration-color: white;  
@@ -45,7 +50,6 @@ a {
   text-decoration-color: white;
 }
 h2 {
-  color: blue;
   text-decoration-color: white;
 }
 h3 {
@@ -56,8 +60,4 @@ h4 {
 }
 h5 {
   text-decoration-color: white;
-}
-textarea {
-  width: 450px;
-  height: 50px;
 }

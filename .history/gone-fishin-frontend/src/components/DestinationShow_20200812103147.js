@@ -15,13 +15,13 @@ const DestinationShow = (props) => {
 
         return (    
             <div>    
-            <h3>                
+            <h2>                
                  {destination ? destination.name : null} - {destination ? destination.city : null} -  {destination ? destination.state : null} <br></br><br></br>-  {destination ? destination.description : null} 
 
-            </h3>
-            <h3>Edit your Destination below</h3><DestinationEdit  destination={destination} />
-            <H2>Lake Features:</H2> <FeaturesContainer destination={destination}/>
-            <H2>Comments:</H2> <CommentsContainer destination={destination} />
+            </h2>
+            <H2>Edit Destination!</H2><DestinationEdit  destination={destination} />
+            <h2>Lake Features!</h2> <FeaturesContainer destination={destination}/>
+            <h2>Comments:</h2> <CommentsContainer destination={destination} />
             </div>
         )
 }

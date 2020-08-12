@@ -20,8 +20,8 @@ const DestinationShow = (props) => {
 
             </h3>
             <h3>Edit your Destination below</h3><DestinationEdit  destination={destination} />
-            <H2>Lake Features:</H2> <FeaturesContainer destination={destination}/>
-            <H2>Comments:</H2> <CommentsContainer destination={destination} />
+            <h2>Lake Features:</h2> <FeaturesContainer destination={destination}/>
+            <h2>Comments:</h2> <CommentsContainer destination={destination} />
             </div>
         )
 }

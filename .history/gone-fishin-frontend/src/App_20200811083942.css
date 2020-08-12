@@ -45,7 +45,6 @@ a {
   text-decoration-color: white;
 }
 h2 {
-  color: blue;
   text-decoration-color: white;
 }
 h3 {
@@ -56,8 +55,4 @@ h4 {
 }
 h5 {
   text-decoration-color: white;
-}
-textarea {
-  width: 450px;
-  height: 50px;
 }

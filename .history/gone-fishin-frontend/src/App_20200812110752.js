@@ -4,10 +4,10 @@ import DestinationsContainer from './containers/DestinationsContainer'
 import styled from 'styled-components'
 import Navbar from './components/Navbar'
 
-const Title = styled.h1`
-color: blue;
-font-size: 100px;
-`
+// const Title = styled.h1`
+// color: blue;
+// font-size: 100px;
+// `
 
 
 

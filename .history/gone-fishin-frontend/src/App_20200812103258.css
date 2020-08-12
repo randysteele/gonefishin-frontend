@@ -45,8 +45,7 @@ a {
   text-decoration-color: white;
 }
 h2 {
-  color: blue;
-  text-decoration-color: white;
+  text-decoration-color: rgb(255, 255, 255);
 }
 h3 {
   text-decoration-color: white;
