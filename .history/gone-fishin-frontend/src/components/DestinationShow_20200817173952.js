@@ -9,6 +9,8 @@ import CommentsContainer from '../containers/CommentsContainer'
 const DestinationShow = (props) => {
 
     let destination = props.destinations[props.match.params.id - 1]
+
+   // let destination = props.destinations.filter(destination => destination.id == props.match.params.id)[0]
   
     
 
