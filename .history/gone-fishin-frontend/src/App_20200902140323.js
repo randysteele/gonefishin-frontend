@@ -3,6 +3,7 @@ import './App.css';
 import DestinationsContainer from './containers/DestinationsContainer'
 import styled from 'styled-components'
 import Navbar from './components/Navbar'
+import ClickMe from './components/ClickMe'
 
 
 const Title = styled.h1`
@@ -21,6 +22,7 @@ class App extends React.Component {
         <Navbar />
         <Title>Gone Fishin'</Title>
 
+        <ClickMe  /> 
       <DestinationsContainer />  
       </div>
       

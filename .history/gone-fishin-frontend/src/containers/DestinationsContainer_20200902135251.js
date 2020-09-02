@@ -24,9 +24,8 @@ class DestinationsContainer extends React.Component {
          <Route  path='/destinations/new' component={DestinationsInput}/>     
          <Route  path='/destinations/:id' render={(routerProps) => <DestinationShow {...routerProps} destinations={this.props.destinations}/>}/>   
          <Route  path='/destinations' render={(routerProps) => <DestinationsList {...routerProps} destinations={this.props.destinations}/>}/>
+         <ClickMe>ClickMe={ClickMe}</ClickMe>
          </Switch><br></br>
-         <ClickMe  /> 
-
          
         </div>
       )

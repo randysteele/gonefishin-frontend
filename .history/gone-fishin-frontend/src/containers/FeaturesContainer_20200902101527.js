@@ -6,7 +6,7 @@ import FeaturesList from '../components/FeaturesList'
 
 class FeaturesContainer extends React.Component {
     
-    
+
 
     render(){
         return (

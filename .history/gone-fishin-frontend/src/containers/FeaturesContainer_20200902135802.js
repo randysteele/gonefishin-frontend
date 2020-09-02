@@ -1,6 +1,7 @@
 import React from 'react'
 import FeaturesInput from '../components/FeaturesInput'
 import FeaturesList from '../components/FeaturesList'
+import ClickMe from '../components/ClickMe'
 
 
 

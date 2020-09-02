@@ -4,7 +4,6 @@ import {addDestination} from '../actions/addDestination'
 
 
 class DestinationsInput extends React.Component {
-    
 
     state = {
         name: '', 
@@ -13,7 +12,7 @@ class DestinationsInput extends React.Component {
         description: ''
 }
 
-    handleChange = (event) => {
+    handleChange(event) {
         this.setState({
            [event.target.name]: event.target.value
         })

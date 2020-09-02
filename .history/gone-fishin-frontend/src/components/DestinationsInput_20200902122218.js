@@ -4,7 +4,6 @@ import {addDestination} from '../actions/addDestination'
 
 
 class DestinationsInput extends React.Component {
-    
 
     state = {
         name: '', 
@@ -13,7 +12,7 @@ class DestinationsInput extends React.Component {
         description: ''
 }
 
-    handleChange = (event) => {
+    handleChange(event) {
         this.setState({
            [event.target.name]: event.target.value
         })
@@ -39,7 +38,7 @@ class DestinationsInput extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}> 
                 <label>Lake Name: </label>
-                <input type="text" placeholder="Lake Name: " value={this.state.name} name="name" onChange={this.handleChange}></input>
+                <input type="text" placeholder="Lake Name: " value={this.state.name} name="name" onChange={this.handleChange.bind(this)}></input>
                 <label>City: </label>   
                 <input type="text" placeholder="City: " value={this.state.city} name="city" onChange={this.handleChange}></input>
                 <label>State: </label>   
