@@ -5,8 +5,7 @@ class ClickMe extends React.Component {
     constructor(){
      super()
      this.state = {
-          count: 0,
-          helloWorld: "HELLO WORLD"
+          count: 0
      }
     }
 
@@ -16,23 +15,16 @@ class ClickMe extends React.Component {
              count: nextCount
          })
      }
-     
-     hello = () => {
-        const excitedHello = this.state.helloWorld + "!"
-        this.setState({
-            helloWorld: excitedHello
-        })
-     }
 
 
      render(){
         return(
             <div>
             <button onClick={this.counter} >
-           CLICK ME {this.state.count}
-            </button>    
-            <p onClick={this.hello}> {this.state.helloWorld}</p>
-         </div>              
+           CLICK ME 
+            </button>    <br></br>
+            {this.state.count}
+            </div>
         )}     
 }
 

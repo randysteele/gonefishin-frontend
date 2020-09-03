@@ -31,7 +31,7 @@ class ClickMe extends React.Component {
             <button onClick={this.counter} >
            CLICK ME {this.state.count}
             </button>    
-            <p onClick={this.hello}> {this.state.helloWorld}</p>
+            <p onClick={this.hello}>HELLO WORLD {this.state.hello}</p>
          </div>              
         )}     
 }

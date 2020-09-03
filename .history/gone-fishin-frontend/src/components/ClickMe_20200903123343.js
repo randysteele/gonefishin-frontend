@@ -11,10 +11,24 @@ class ClickMe extends React.Component {
     }
 
      counter = () => {
-         const nextCount = this.state.count + 1 
-         this.setState({
-             count: nextCount
-         })
+        //  const nextCount = this.state.count + 1 
+        //  this.setState({
+        //      count: nextCount
+        //  })
+
+        console.log('a')
+
+        fetch("http://localhost:3000/api/v1/destinationssdfjkdjflss")
+            .then(resp => {
+                console.log('b')
+                return resp.json();
+            })
+            .then(data => console.log('c', data))
+            .catch(errors => console.log('d', errors))
+  
+        console.log('e')
+
+        // a, e, d
      }
      
      hello = () => {

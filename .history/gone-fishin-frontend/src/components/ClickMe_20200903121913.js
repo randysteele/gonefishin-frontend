@@ -18,7 +18,7 @@ class ClickMe extends React.Component {
      }
      
      hello = () => {
-        const excitedHello = this.state.helloWorld + "!"
+        const excitedHello = this.state.helloWorld + !
         this.setState({
             helloWorld: excitedHello
         })
@@ -31,8 +31,9 @@ class ClickMe extends React.Component {
             <button onClick={this.counter} >
            CLICK ME {this.state.count}
             </button>    
-            <p onClick={this.hello}> {this.state.helloWorld}</p>
-         </div>              
+            <p onClick={this.hello}>HELLO WORLD {this.state.hello}</p>
+         </div>  
+            
         )}     
 }
 
