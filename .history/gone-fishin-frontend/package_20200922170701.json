@@ -23,7 +23,7 @@
     "eject": "react-scripts eject",
     "deploy": "cp -a client/build/. public/",
     "heroku-postbuild": "yarn build && yarn deploy",
-    "postinstall": "npm install && npm run build && npm run deploy && echo 'Client built!' "
+    "postinstall": "npm run build && npm run deploy && echo 'Client built!' "
 
   },
   "eslintConfig": {

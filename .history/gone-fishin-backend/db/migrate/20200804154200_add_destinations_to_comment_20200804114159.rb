@@ -3,6 +3,3 @@ class AddDestinationsToComment < ActiveRecord::Migration[6.0]
     add_column :comments, :destination_id, :integer
   end
 end
-
-
-
