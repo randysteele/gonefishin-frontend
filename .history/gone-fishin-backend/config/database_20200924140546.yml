@@ -6,9 +6,7 @@
 #
 default: &default
   adapter: postgresql
-  pool: 5
-  database:
-  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
 development:
@@ -27,6 +25,3 @@ production:
   database: dfv93cauv9sdhe
   username: zmmyrunuoepakw
   password: f1432d063cb17d72113966cc72b9246e20e9df56426ed8c7e49d4f90a747fa4a
-  port: 5432
-  # uri: postgres://zmmyrunuoepakw:f1432d063cb17d72113966cc72b9246e20e9df56426ed8c7e49d4f90a747fa4a@ec2-50-16-221-180.compute-1.amazonaws.com:5432/dfv93cauv9sdhe
-  DATABASE_URL: postgres://apedcaahdankic:9c3a5cd3efb9d23eec7a39a99e10bf2ddeb1d4de31d789aa43e5d0dfb85aac61@ec2-54-158-122-162.compute-1.amazonaws.com:5432/d4qhqgstf8kb74

@@ -21,9 +21,13 @@
     "styled-components": "^5.1.1"
   },
   "scripts": {
-    "build": "cd client && npm install && npm run build && cd ..",
+    "start": "react-scripts start",
+    "build": "cd gone-fishin-frontend && npm install && npm run build && cd exit",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "deploy": "cp -a client/build/. public/",
-    "postinstall": "npm run build && npm run deploy && echo 'Gone-fishin built!' "
+    "heroku-postbuild": "yarn build && yarn deploy",
+    "postinstall": "npm install && npm run build && npm run deploy && echo 'Client built!' "
 
   },
   "eslintConfig": {
