@@ -1,0 +1,24 @@
+{
+  "name": "gone-fishin-backend",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "engines": {
+    "npm": "6.14.6",
+    "node": "14.5.0"
+  },
+
+  
+
+  "scripts": {
+    "build": "cd gone-fishin-backend && npm install && npm run build && cd ..",
+    "deploy": "cp -a client/build/. public/"
+
+  },
+  "author": "",
+  "license": "ISC"
+}
