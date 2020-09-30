@@ -1,7 +1,7 @@
 export const addComment = (comment, destinationId) => {
 
     return (dispatch) => {
-    fetch(`https://gonefishin-frontend.herokuapp.com//destinations/${destinationId}/comments`, {
+    fetch(`https://tranquil-river-97007.herokuapp.com/destinations/${destinationId}/comments`, {
     method: 'POST',
     headers: {'Content-Type': 'application/json'
     },
