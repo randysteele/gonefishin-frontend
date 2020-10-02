@@ -2,7 +2,7 @@
 
 export function fetchDestinations() {
   return (dispatch) => {
-   fetch("https://git.heroku.com/tranquil-river-97007.git/destinations/")
+   fetch("https://gonefishin-backend.firebaseapp.com/api/v1/destinations/")
     .then(response => response.json())
     .then(destinations => dispatch({
       type: 'FETCH_DESTINATIONS',

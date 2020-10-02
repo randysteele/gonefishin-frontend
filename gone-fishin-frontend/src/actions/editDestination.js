@@ -1,7 +1,7 @@
 export const editDestination = (data) => {
     
     return (dispatch) => {
-        fetch(`https://tranquil-river-97007.herokuapp.com/destinations/${data.id}`, {
+        fetch(`http://localhost:3000/api/v1/destinations/${data.id}`, {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'

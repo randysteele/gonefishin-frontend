@@ -57,5 +57,5 @@
 
 # Ignore public, as it is built on deploy
 # Place files for /public in /client/public
-/publicnode_modules
+#/publicnode_modules
 npm-debug.log
