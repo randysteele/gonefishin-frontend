@@ -23,5 +23,7 @@ export default function destinations(state = {destinations: []}, action) {
       return {...state, destinations: destinations}   
     default:
       return state
+      case 'DELETE_DESTINATION':
+      default: state
     }
 }
