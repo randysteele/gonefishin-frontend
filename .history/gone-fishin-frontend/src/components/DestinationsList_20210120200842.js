@@ -10,7 +10,7 @@ const DestinationsList = (props) => {
 
     const handleDelete = (destination) => {
         props.deleteDestination(destination.id) 
-        // debugger
+        debugger
     }
 
     // const handleDelete = (feature) => {

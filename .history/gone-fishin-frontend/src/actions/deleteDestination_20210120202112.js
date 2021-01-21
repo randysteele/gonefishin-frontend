@@ -2,11 +2,7 @@ export const deleteDestination = (destinationId) => {
 
     return (dispatch) => {
        return fetch(`https://localhost:3000/api/v1/destinations/${destinationId}`, { 
-        method: 'DELETE'    ,
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-      },          
+        method: 'DELETE'              
     })
      .then(response => response.json())
      .then(destination => dispatch({type: 'DELETE_DESTINATION', payload: destination}))

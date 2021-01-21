@@ -20,7 +20,7 @@ class DestinationsContainer extends React.Component {
     render(){        
       return (
         <div>  
-        {/* <ClickMe  />  */}
+        <ClickMe  /> 
 
           <Switch>
          <Route  path='/destinations/new' component={DestinationsInput}/>     
