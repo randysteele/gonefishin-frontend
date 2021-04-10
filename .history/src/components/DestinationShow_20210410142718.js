@@ -21,7 +21,7 @@ const DestinationShow = (props) => {
       <h3>Edit your Destination below</h3><DestinationEdit destination={destination} />
       <h2>Lake Features:</h2> <FeaturesContainer destination={destination} />
       <h2>Comments:</h2> <CommentsContainer destination={destination} />
-      <img src={destination}></img>
+      <img src={destination.image.url}></img>
     </div>
   )
 }
