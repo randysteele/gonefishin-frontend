@@ -14,16 +14,16 @@ font-size: 100px;
 
 class App extends React.Component {
 
-  render() {
-    return (
-
+  render(){
+    return(
+      
       <div className="App">
         <Navbar />
         <Title>Gone Fishin'</Title>
 
-        <DestinationsContainer />
+      <DestinationsContainer />  
       </div>
-
+      
     )
   }
 }

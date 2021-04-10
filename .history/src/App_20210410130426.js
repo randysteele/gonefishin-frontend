@@ -3,6 +3,7 @@ import './App.css';
 import DestinationsContainer from './containers/DestinationsContainer'
 import styled from 'styled-components'
 import Navbar from './components/Navbar'
+import Rotate from './styledComponents.js/Rotate'
 
 
 const Title = styled.h1`
@@ -19,7 +20,7 @@ class App extends React.Component {
 
       <div className="App">
         <Navbar />
-        <Title>Gone Fishin'</Title>
+        <Rotate><Title>Gone Fishin'</Title></Rotate>
 
         <DestinationsContainer />
       </div>

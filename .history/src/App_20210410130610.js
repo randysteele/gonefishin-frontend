@@ -3,6 +3,7 @@ import './App.css';
 import DestinationsContainer from './containers/DestinationsContainer'
 import styled from 'styled-components'
 import Navbar from './components/Navbar'
+import Rotate from './styledComponents.js/Rotate'
 
 
 const Title = styled.h1`
