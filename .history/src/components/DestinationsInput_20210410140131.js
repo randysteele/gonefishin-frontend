@@ -10,8 +10,7 @@ class DestinationsInput extends React.Component {
         name: '',
         city: '',
         state: '',
-        description: '',
-        image: null
+        description: ''
     }
 
     handleChange = (event) => {
@@ -20,9 +19,6 @@ class DestinationsInput extends React.Component {
         })
     }
 
-    onImageChange = event => {
-        this.setState({ image: event.target.files[0] });
-    };
 
     handleSubmit = (event) => {
         event.preventDefault()
@@ -52,7 +48,6 @@ class DestinationsInput extends React.Component {
                     <label>Description: </label>
                     <textarea type="text" placeholder="Description: " value={this.state.description} name="description" onChange={this.handleChange}>
                     </textarea>
-                    <input type="file" accept="image/*" multiple={false} onChange={this.onImageChange} />
                     <input type="submit" />
                 </form>
             </div>

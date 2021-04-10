@@ -4,7 +4,7 @@ import Button from '../styledComponents.js/Button'
 import H2 from '../styledComponents.js/H2'
 import { deleteDestination } from '../actions/deleteDestination'
 import { connect } from 'react-redux'
-// import Rotate from '../styledComponents.js/Rotate'
+import Rotate from '../styledComponents.js/Rotate'
 
 
 
